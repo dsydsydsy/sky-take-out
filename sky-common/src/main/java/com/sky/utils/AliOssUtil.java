@@ -27,6 +27,7 @@ public class AliOssUtil {
      * @return
      */
     public String upload(byte[] bytes, String objectName) {
+        //这里的objectName是该文件再阿里云里存储的文件名字，一般我们用uuid为其生成objectName
 
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
